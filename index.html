@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<!--
+                               ____
+                            _.' :  `._
+                        .-.'`.  ;   .'`.-.
+               __      / : ___\ ;  /___ ; \      __
+             ,'_ ""=-.:__;".-.";: :".-.":__;.-="" _`,
+             :' `.t""=-.. '<@.`;_  ',@:` ..-=""j.' `;
+                  `:-.._J '-.-'L__ `-.-' L_..-;'
+                    "-.__ ;  .-"  "-.  : __.-"
+                        L ' /.======.\ ' J
+                         "-.   "__"   .-"
+                        __.l"-:_JL_;-";.__
+                     .-j/'.;  ;""""  / .'\"-.
+                   .' /:`. "-.:     .-" .';  `.
+                .-"  / ;  "-. "-..-" .-"  :    "-.
+             .+"-.  : :      "-.__.-"      ;-._   \
+             ; \  `.; ;                    : : "+. ;
+             :  ;   ; ;                    : ;  : \:
+             ;  :   ; :                    ;:   ;  :
+            : \  ;  :  ;                  : ;  /  ::
+            ;  ; :   ; :                  ;   :   ;:
+            :  :  ;  :  ;                : :  ;  : ;
+            ;\    :   ; :                ; ;     ; ;
+            : `."-;   :  ;              :  ;    /  ;
+             ;    -:   ; :              ;  : .-"   :
+             :\     \  :  ;            : \.-"      :
+              ;`.    \  ; :            ;.'_..-=  / ;
+              :  "-.  "-:  ;          :/."      .'  :
+               \         \ :          ;/  __        :
+                \       .-`.\        /t-""  ":-+.   :
+                 `.  .-"    `l    __/ /`. :  ; ; \  ;
+                   \   .-" .-"-.-"  .' .'j \  /   ;/
+                    \ / .-"   /.     .'.' ;_:'    ;
+                     :-""-.`./-.'     /    `.___.'
+                           \ `t  ._  /
+                            "-.t-._:'
+
+-->
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+    <meta name="format-detection" content="telephone=no"/>
+    <meta name="format-detection" content="email=no"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+    <title>苏瑞的个人简历</title>
+    <meta name="description" content="surui'的个人简历，网页版个人简历，基于html5和impress" />
+    <meta name="author" content="surui" />
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+    <link href="assets/css/style.css" type="text/css" rel="stylesheet" />
+    <!--[if lt IE 9]>
+        <script src="assets/js/html5shiv.js" type="text/javascript"></script>
+    <![endif]-->
+</head>
+
+<body class="impress-not-supported">
+    <div class="fallback-message">
+        <p>你的浏览器不支持该简历预览，为了更好的体验请使用Chrome、Firefox、Safari浏览器</p>
+    </div>
+
+    <div class="surrounding-anim">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+
+    <div class="loading">
+        <div class="spinner"></div>
+    </div>
+
+    <div class="welcome flipOutY">
+        <h1>Welcome to surui's resume</h1>
+        <a href="javascript:void(0);" id="down_arrow" title="go"></a>
+    </div>
+
+    <div id="impress">
+        <div id="about" class="step slide" data-x="-2000" data-y="-1500" data-z="-100" data-rotate="30">
+            <h2>关于我</h2>
+            <p>2016年6月从中国石油大学研究生毕业，2016年1月至今，就职于小米MIUI，工作期间，主要负责公司流量项目和优化前端开发工具流的工作。</p>
+            <p>爱生活，爱运动，爱互联网。有责任心和团队合作精神，热衷和关注前端开发，有一颗学习和进取的心。希望能进入贵公司工作，提高自己的综合素质和知识技能，积累更多的经验。</p>
+            <p>github：<a href="https://github.com/letyougo" target="_blank">https://github.com/letyougo</a></p>
+        </div>
+
+        <div id="skill" class="step slide" data-x="-1000" data-y="-1500" data-rotate="60">
+            <h2>技能</h2>
+            <div class="bubbleChart"></div>
+        </div>
+
+        <div id="personal-experience" class="step slide" data-x="0" data-y="-1500" data-rotate="90">
+            <h2>近期个人作品</h2>
+            <div class="experience">
+                <h3>ryan-cli</h3>
+                <p>这是一个nodejs制作的命令行工具，主要是为了解决日常工作中，提高开发功能重复的工作，可以根据这个脚手架创建页面模板，目前集成了vue的脚手架vue-cli,和react脚手架create-react-app,提高开发效率，目前托管在npm上，可以通过npm install -g ryan-cli测试功能</p>
+                <p>另外一个功能就是一个mock-server 通过ryan watch db.json的命令开启一个restful mock server</p>
+                <p>实现原理:是通过express 对一个json文件进行读写操作，返回特定字段的数据，也可以提供随机数据</p>
+                <p>项目目的:解决工作中需要mockjs的配置繁琐</p>
+            </div>
+        </div>
+
+
+        <div id="work-experience" class="step slide" data-x="1000" data-y="-1500" data-rotate="120">
+            <h2>项目经验</h2>
+            <div class="experience">
+               <h3>安全中心流量项目</h3>
+                <p>MIUI安全中心的流量校正功能有一个购买流量的入口，我们与移动，电信，联通三大运营商合作售卖前向流量，后向流量与定向流量</p>
+               <p>这是个历史项目，我的角色属于维护工作，主要技术是jquery与grunt</p>
+               <h3>小米手机安全中心游戏加速项目</h3>
+               <p>小米手机安全中心有较高的系统权限通过提高用户手机的CPU使用率和杀死其它进程，来提高手机硬件性能，为用户提供游戏加速功能</p>
+               <p>这是2016年中的一个项目，我的角色是，中途接手这个项目，主要技术是VUE</p>
+               <h3>安全组CDN与前端持续发布项目</h3>
+               <p>我为MIUI做了个类似windows操作系统的用户体验的文件系统，用户可以上传文件与文件夹到我为这个用户所分配的目录，文件存在小米云的某个某个集群服务器。并且根据这个CND项目后期开发了持续发布项目
+                   主要功能是用户通过创建个人项目，主要是根据用户传入的gitlab地址，在远程机器进行shell的git pull操作，并且讲git pull下来的项目文件与数据库关联。用户可以根据前端的pull按钮，切换分支按钮，部署前端项目
+                   这个项目的主要技术用了，react redux django mysql nodejs全部由我完成。
+               </p>
+
+            </div>
+        </div>
+
+        <div id="contact" class="step slide" data-x="2000" data-y="-1500" data-rotate="150">
+            <h2>联系我</h2>
+            <p>邮箱：<strong><a href="cuoxiaoxiaosu@gmail.com" title="cupxiaoxiaosu@gmail.com">cupxiaoxiaosu@gmail.com</a></strong></p>
+            <p>qq: <strong><a href="mailto:313755017@qq.com" title="313755017@qq.com">313755017@qq.com</a></strong></p>
+            <p>电话：13683360717</p>
+            <p><img src="assets/images/nba.gif" width="400" alt=""></p>
+        </div>
+
+        <div id="overview" class="step" data-x="0" data-y="0" data-scale="6">
+            <p>Thanks for preview</p>
+        </div>
+
+    </div>
+
+    <div class="hint">
+        <p>使用空格键或方向键来浏览</p>
+    </div>
+
+    <script type="text/javascript">
+        if ("ontouchstart" in document.documentElement) {
+            document.querySelector(".hint").innerHTML = "<p>Tap on the left or right to navigate</p>";
+        }
+    </script>
+
+    <script src="assets/js/jquery.min.js" type="text/javascript"></script>
+    <script src="assets/js/d3.min.js" type="text/javascript"></script>
+    <script src="assets/js/bubble-support.js" type="text/javascript"></script>
+    <script src="assets/js/impress.js" type="text/javascript"></script>
+    <script src="assets/js/global.js" type="text/javascript"></script>
+
+</body>
+</html>
+
